@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Delivery | Dr. Richard Amponsah</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Dr. Richard Amponsah</h1>
+                <p>Medical Practitioner | Sawaba Asante Bekwai</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="book.html">Book Appointment</a></li>
+                    <li><a href="delivery.html" class="active">Request Delivery</a></li>
+                    <li><a href="drugs.html">Medicines</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h2>Request Medicine Delivery</h2>
+            <p>Get your medications delivered to your doorstep</p>
+        </div>
+    </section>
+
+    <section class="delivery-form">
+        <div class="container">
+            <form id="deliveryForm">
+                <div class="form-group">
+                    <label for="delivery-name">Full Name</label>
+                    <input type="text" id="delivery-name" name="name" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="delivery-phone">Phone Number</label>
+                        <input type="tel" id="delivery-phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="delivery-email">Email (Optional)</label>
+                        <input type="email" id="delivery-email" name="email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="delivery-address">Delivery Address</label>
+                    <textarea id="delivery-address" name="address" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="delivery-items">Items Needed (You can also order from <a href="drugs.html">Medicines page</a>)</label>
+                    <textarea id="delivery-items" name="items" rows="4" required placeholder="List the medications you need with quantities"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="delivery-instructions">Special Instructions</label>
+                    <textarea id="delivery-instructions" name="instructions" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Payment Method</label>
+                    <div class="payment-options">
+                        <label>
+                            <input type="radio" name="payment" value="paystack" checked>
+                            <span>Paystack (Card/Transfer)</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="payment" value="momo">
+                            <span>Mobile Money (0240 469 250)</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="payment" value="cash">
+                            <span>Cash on Delivery</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-submit">
+                    <button type="submit" class="btn-primary">Request Delivery</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="book.html">Appointment</a></li>
+                        <li><a href="delivery.html">Delivery</a></li>
+                        <li><a href="drugs.html">Medicines</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> +233 59 816 0732</p>
+                    <p><i class="fab fa-whatsapp"></i> +233 59 816 0732</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Sawaba, Asante Bekwai</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Payment Methods</h3>
+                    <div class="payment-methods">
+                        <i class="fas fa-mobile-alt" title="Mobile Money"></i>
+                        <i class="fas fa-credit-card" title="Paystack"></i>
+                    </div>
+                    <p>Momo: 0240 469 250 (Richard Amponsah)</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Dr. Richard Amponsah. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="delivery.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
